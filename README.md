@@ -1,2 +1,2 @@
 # netlifyTesting
-Repo for testing netlify cms
+Repo for testing netlify cms Manuel
