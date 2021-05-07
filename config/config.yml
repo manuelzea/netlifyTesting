@@ -1,0 +1,61 @@
+metadata:
+  name: PureWeb
+  short_name: PW
+  description: PureWeb
+  language: en
+  url: 'http://localhost'
+  pathPrefix: /
+  gaTrackingId: null
+  favicon: /assets/favicon-32x32.png
+  themeColor: '#0066cc'
+header:
+  enabled: true
+  logo: /assets/logoPureweb.png
+  links: []
+sidebar:
+  ignoreIndex: false
+  forcedNavOrder: []
+  expanded: []
+  groups: 
+    - order: 1
+      path: '/gettingstarted'
+      title: 'Getting Started'
+    - order: 2
+      path: '/configuration'
+      title: 'Configuration'
+  links: []
+  poweredBy: {}
+  enabled: true
+pwa:
+  enabled: true
+  manifest:
+    icon: /assets/logoPureweb.png
+    display: minimal-ui
+    crossOrigin: anonymous
+features:
+  editOnRepo:
+    editable: true
+    location: 'http://localhost'
+    type: github
+  search:
+    enabled: true
+    indexName: docs
+    showStats: true
+    pagination:
+      enabled: true
+  rss:
+    enabled: false
+    showIcon: true
+    copyright: ''
+    categories: []
+    matchRegex: ^/
+    outputPath: /rss.xml
+  darkMode:
+    enabled: true
+    default: false
+search:
+  enabled: true
+  startComponent: input
+  placeholder: Search...
+  pagination:
+    enabled: true

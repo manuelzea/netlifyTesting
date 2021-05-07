@@ -1,0 +1,26 @@
+{
+  "name": "@platform/developer1",
+  "version": "0.1.0",
+  "description": "PureWeb",
+  "repository": {
+    "type": "git",
+    "url": "http://localhost"
+  },
+  "keywords": [
+    "boogi",
+    "docs"
+  ],
+  "main": "n/a",
+  "scripts": {
+    "start": "node_modules/.bin/boogi develop",
+    "develop": "node_modules/.bin/boogi develop",
+    "build": "node_modules/.bin/boogi build",
+    "clean": "node_modules/.bin/boogi clean",
+    "deploy": "aws s3 sync public s3://`aws cloudformation describe-stacks --stack-name platform-$PLATFORM_CONFIGURATION-api | jq -j '.Stacks[0].Outputs[] | select(.OutputKey==\"DocumentationS3Bucket\") | .OutputValue'` --delete --acl public-read --cache-control max-age=60,public --metadata-directive REPLACE"
+  },
+  "dependencies": {
+    "boogi-cli": "0.4.0",
+    "gatsby-plugin-netlify-cms": "^5.4.1",
+    "netlify-cms-app": "^2.15.2"
+  }
+}
