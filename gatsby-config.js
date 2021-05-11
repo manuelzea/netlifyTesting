@@ -17,7 +17,6 @@ const plugins = [
   'gatsby-plugin-pinterest',
   'gatsby-plugin-twitter',
   'gatsby-plugin-sharp',
-  'gatsby-plugin-netlify-cms',
   'gatsby-plugin-sass',
   {
     resolve: `gatsby-plugin-layout`,
